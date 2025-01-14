@@ -1,39 +1,46 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/pontuskarlsson/schemas/main/schemas.json",
-  "title": "DePalma Workshop Community Schemas",
-  "description": "Registry of community-contributed schemas representing industry knowledge and best practices. All schemas in this registry are licensed under Creative Commons Attribution-ShareAlike 4.0 International to ensure the knowledge remains open and accessible.",
-  "version": {
-    "schemaVersion": "1.0.0",
-    "lastUpdated": "2025-01-14",
-    "status": {
-      "state": "stable",
-      "details": "Registry of all available DePalma Workshop community schemas",
-      "since": "2025-01-14"
+  "$id": "https://raw.githubusercontent.com/depalmaworkshop/arsenal/main/registry-schemas.json",
+  "title": "DePalma Workshop Schemas Registry",
+  "description": "Official registry of all JSON schemas used within the DePalma Workshop ecosystem. This includes both company-created and community-contributed schemas, all designed to standardize and share industry knowledge. All schemas are licensed under Creative Commons Attribution-ShareAlike 4.0 International to ensure knowledge remains open and accessible to the entire DePalma Workshop community.",
+  "attribution": {
+    "maintainers": [
+      {
+        "name": "Pontus Karlsson",
+        "role": "lead maintainer",
+        "profile": "https://github.com/pontuskarlsson"
+      }
+    ],
+    "organization": {
+      "name": "DePalma Workshop",
+      "profile": "https://github.com/depalmaworkshop",
+      "repo": "depalmaworkshop/arsenal"
     }
   },
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-14",
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 4.0 International",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "attributionText": "Created by Pontus Karlsson and licensed under CC BY-SA 4.0",
-    "attributionUrl": "https://github.com/pontuskarlsson/schemas",
-    "notes": "All schemas in this registry must be licensed under CC BY-SA 4.0 to ensure the knowledge remains open, accessible, and can be built upon by the community while maintaining attribution to contributors."
+    "attributionText": "A community effort initiated by DePalma Workshop and licensed under CC BY-SA 4.0. Individual contributions are credited within each schema.",
+    "attributionUrl": "https://github.com/depalmaworkshop/arsenal",
+    "notes": "This registry represents a collaborative effort between DePalma Workshop and its community. While the registry itself is maintained by DePalma Workshop, the individual schemas are created and maintained by various contributors. Each schema includes its own attribution details. All contributions must be licensed under CC BY-SA 4.0 to ensure the knowledge remains open and accessible."
   },
   "schemas": [
     {
       "id": "schema-meta",
       "title": "JSON Schema Meta-Schema",
       "description": "Meta-schema for validating JSON schema documents",
-      "version": {
-        "schemaVersion": "1.0.0",
-        "lastUpdated": "2025-01-14"
-      },
-      "creator": {
-        "name": "Pontus Karlsson",
-        "provider": {
-          "name": "github",
-          "profile": "https://github.com/pontuskarlsson",
-          "repo": "pontuskarlsson/schemas"
+      "metaSchemaVersion": "1.0.0",
+      "version": "1.0.0",
+      "attribution": {
+        "author": {
+          "name": "Pontus Karlsson",
+          "provider": {
+            "name": "github",
+            "profile": "https://github.com/pontuskarlsson",
+            "repo": "pontuskarlsson/schemas"
+          }
         }
       },
       "schema": "https://raw.githubusercontent.com/pontuskarlsson/schemas/main/schema-meta.json"
