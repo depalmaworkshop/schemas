@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/pontuskarlsson/schemas/main/schemas.json",
+  "title": "DePalma Workshop Community Schemas",
+  "description": "Registry of community-contributed schemas representing industry knowledge and best practices. All schemas in this registry are licensed under Creative Commons Attribution-ShareAlike 4.0 International to ensure the knowledge remains open and accessible.",
+  "version": {
+    "schemaVersion": "1.0.0",
+    "lastUpdated": "2025-01-14",
+    "status": {
+      "state": "stable",
+      "details": "Registry of all available DePalma Workshop community schemas",
+      "since": "2025-01-14"
+    }
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attributionText": "Created by Pontus Karlsson and licensed under CC BY-SA 4.0",
+    "attributionUrl": "https://github.com/pontuskarlsson/schemas",
+    "notes": "All schemas in this registry must be licensed under CC BY-SA 4.0 to ensure the knowledge remains open, accessible, and can be built upon by the community while maintaining attribution to contributors."
+  },
+  "schemas": [
+    {
+      "id": "schema-meta",
+      "title": "JSON Schema Meta-Schema",
+      "description": "Meta-schema for validating JSON schema documents",
+      "version": {
+        "schemaVersion": "1.0.0",
+        "lastUpdated": "2025-01-14"
+      },
+      "creator": {
+        "name": "Pontus Karlsson",
+        "provider": {
+          "name": "github",
+          "profile": "https://github.com/pontuskarlsson",
+          "repo": "pontuskarlsson/schemas"
+        }
+      },
+      "schema": "https://raw.githubusercontent.com/pontuskarlsson/schemas/main/schema-meta.json"
+    }
+  ]
+}
