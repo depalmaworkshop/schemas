@@ -44,6 +44,24 @@
         }
       },
       "schema": "https://raw.githubusercontent.com/pontuskarlsson/schemas/main/schema-meta.json"
+    },
+    {
+      "id": "schema-depalma-workshop-dictionary",
+      "title": "DePalma Workshop - Schema for Dictionary Item",
+      "description": "Schema for dictionary items (words, terms, and comparisons)",
+      "metaSchemaVersion": "1.0.0",
+      "version": "1.0.0",
+      "attribution": {
+        "author": {
+          "name": "Pontus Karlsson",
+          "provider": {
+            "name": "github",
+            "profile": "https://github.com/pontuskarlsson",
+            "repo": "pontuskarlsson/depalmaworkshop"
+          }
+        }
+      },
+      "schema": "https://raw.githubusercontent.com/pontuskarlsson/depalmaworkshop/main/schemas/schema-depalma-workshop-dictionary.json"
     }
   ]
 }
