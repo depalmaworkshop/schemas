@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/pontuskarlsson/depalmaworkshop/main/schemas/schema-depalma-workshop-artifact-color.json",
   "$id": "https://raw.githubusercontent.com/depalmaworkshop/arsenal/main/artifacts/colors/artifact-color-970-asphalt.json",
   "attribution": {
     "contributors": [
@@ -6,6 +7,11 @@
         "name": "Johan Sigurdson",
         "role": "contributor",
         "profile": "https://github.com/johansigurdson"
+      },
+      {
+        "name": "Pontus Karlsson",
+        "role": "contributor",
+        "profile": "https://github.com/pontuskarlsson"
       }
     ],
     "originalSource": {
@@ -25,11 +31,11 @@
   "license": {
     "name": "Creative Commons Attribution-ShareAlike 4.0 International",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "attributionText": "Color artifact created by Johan Sigurdson for DePalma Workshop",
+    "attributionText": "Artifact created by Johan SIgurdson based on DePalma Workshop color standards",
     "disclaimer": "Any external color standards or systems referenced in this artifact are used for identification purposes only. Such references are part of the technical specification and do not imply ownership, affiliation, or endorsement. All referenced standards and their associated codes remain the property of their respective owners."
   },
   "colorName": "Asphalt",
-  "colorType": "Grey",
+  "colorType": "Gray",
   "colorCode": "970",
   "references": {
     "colorSpaces": {
