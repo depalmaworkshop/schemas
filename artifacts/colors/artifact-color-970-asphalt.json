@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pontuskarlsson/depalmaworkshop/main/schemas/schema-depalma-workshop-artifact-color.json",
+  "$id": "https://raw.githubusercontent.com/depalmaworkshop/arsenal/main/artifacts/colors/artifact-color-970-asphalt.json",
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-31",
+  "color": {
+    "code": "970",
+    "name": "Asphalt",
+    "type": "Grey"
+  },
+  "references": [
+    {
+      "name": "19-0201 TCX, Asphalt",
+      "type": "PANTONE® f+h cotton TCX-New Colors",
+      "source": "DePalma Workwear"
+    }
+  ],
+  "attribution": {
+    "author": {
+      "name": "Johan Sigurdson",
+      "provider": {
+        "name": "github",
+        "profile": "https://github.com/johansigurdson",
+        "repo": "depalmaworkshop/arsenal"
+      }
+    },
+    "license": {
+      "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  }
+}
