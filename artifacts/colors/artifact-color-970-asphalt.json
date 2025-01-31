@@ -1,32 +1,51 @@
 {
-  "$schema": "https://raw.githubusercontent.com/pontuskarlsson/depalmaworkshop/main/schemas/schema-depalma-workshop-artifact-color.json",
   "$id": "https://raw.githubusercontent.com/depalmaworkshop/arsenal/main/artifacts/colors/artifact-color-970-asphalt.json",
-  "version": "1.0.0",
-  "lastUpdated": "2025-01-31",
-  "color": {
-    "code": "970",
-    "name": "Asphalt",
-    "type": "Grey"
-  },
-  "references": [
-    {
-      "name": "19-0201 TCX, Asphalt",
-      "type": "PANTONE® f+h cotton TCX-New Colors",
-      "source": "DePalma Workwear"
-    }
-  ],
   "attribution": {
-    "author": {
-      "name": "Johan Sigurdson",
-      "provider": {
-        "name": "github",
-        "profile": "https://github.com/johansigurdson",
-        "repo": "depalmaworkshop/arsenal"
+    "contributors": [
+      {
+        "name": "Johan Sigurdson",
+        "role": "contributor",
+        "profile": "https://github.com/johansigurdson"
       }
-    },
-    "license": {
-      "name": "Creative Commons Attribution-ShareAlike 4.0 International",
-      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "originalSource": {
+      "name": "DePalma Workshop",
+      "profile": "https://github.com/depalmaworkshop"
     }
+  },
+  "version": {
+    "artifactVersion": "1.0.0",
+    "lastUpdated": "2025-01-31",
+    "status": {
+      "state": "draft",
+      "details": "Initial creation of Asphalt color artifact",
+      "since": "2025-01-31"
+    }
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attributionText": "Color artifact created by Johan Sigurdson for DePalma Workshop",
+    "disclaimer": "Any external color standards or systems referenced in this artifact are used for identification purposes only. Such references are part of the technical specification and do not imply ownership, affiliation, or endorsement. All referenced standards and their associated codes remain the property of their respective owners."
+  },
+  "colorName": "Asphalt",
+  "colorType": "Grey",
+  "colorCode": "970",
+  "references": {
+    "colorSpaces": {
+      "rgb": {
+        "r": 64,
+        "g": 64,
+        "b": 64
+      },
+      "hex": "#404040"
+    },
+    "standards": [
+      {
+        "standardName": "PANTONE f+h cotton TCX-New Colors",
+        "colorName": "Asphalt",
+        "colorCode": "19-0201 TCX"
+      }
+    ]
   }
 }
