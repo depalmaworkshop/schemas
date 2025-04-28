@@ -1,0 +1,5 @@
+.DS_Store
+**/.DS_Store    # This catches .DS_Store in all subdirectories
+._.DS_Store
+**/._.DS_Store
+.obsidian
