@@ -1,5 +1,5 @@
-# Arsenal
-Repository for DePalma Workshop Arsenal
+# Schemas
+Repository for DePalma Workshop Schemas
 
 ## Contributing
 
