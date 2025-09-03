@@ -39,10 +39,10 @@ ls -la schema-*/
 
 ```
 Schema Hierarchy:
-┌─────────────────────┐    ┌──────────────────────────┐    ┌─────────────────────┐
-│     Metaschema      │───▶│  Specialized Metaschemas │───▶│   Commons Schemas   │
-│ (Foundation for all)│    │ (e.g., metaschema-artifact)│    │  (Colors, Materials)│
-└─────────────────────┘    └──────────────────────────┘    └─────────────────────┘
+┌──────────────────────┐    ┌─────────────────────────────┐    ┌──────────────────────┐
+│     Metaschema       │───▶│  Specialized Metaschemas    │───▶│   Commons Schemas    │
+│ (Foundation for all) │    │ (e.g., metaschema-artifact) │    │  (Colors, Materials) │
+└──────────────────────┘    └─────────────────────────────┘    └──────────────────────┘
 ```
 
 The metaschema defines what all schemas must contain, ensuring quality and consistency across our community.
@@ -65,17 +65,17 @@ schemas/
 │           └── schema.json
 ├── CONTRIBUTING.md          # How to contribute schemas
 ├── LICENSE                  # CC BY-SA 4.0 license
-└── README.md               # This file
+└── README.md                # This file
 ```
 
 ## 📋 Available Schemas
 
-| Schema | Description | Version | Status |
-|--------|-------------|---------|--------|
-| `metaschema` | Foundation metaschema for all schemas | 1.0.0 | Stable |
-| `metaschema-artifact` | Metaschema for Artifact schemas | 1.0.0 | Draft |
-| `schema-artifact-color` | Schema for color artifacts | 1.0.0 | Draft |
-| More schemas coming soon... | | | |
+| Schema                      | Description                           | Version | Status |
+| --------------------------- | ------------------------------------- | ------- | ------ |
+| `metaschema`                | Foundation metaschema for all schemas | 1.0.0   | Stable |
+| `metaschema-artifact`       | Metaschema for Artifact schemas       | 1.0.0   | Draft  |
+| `schema-artifact-color`     | Schema for color artifacts            | 1.0.0   | Draft  |
+| More schemas coming soon... |                                       |         |        |
 
 ## 🛠️ Development
 
