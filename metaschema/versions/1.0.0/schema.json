@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/depalmaworkshop/schemas/main/metaschema/versions/1.0.0/schema.json",
+  "name": "metaschema",
+  "title": "DePalma Workshop Metaschema",
+  "description": "The foundational metaschema that defines the structure and requirements for all metaschemas and schemas in the DePalma Workshop ecosystem",
+  
+  "version": {
+    "schema_version": "1.0.0"
+  },
+  
+  "license": {
+    "type": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  
+  "maintainers": [
+    {
+      "name": "Pontus Karlsson",
+      "role": "Lead Maintainer"
+    }
+  ],
+  
+  "type": "object",
+  
+  "required": [
+    "$schema",
+    "$id",
+    "name",
+    "title",
+    "version"
+  ],
+  
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri",
+      "description": "Reference to the JSON Schema specification or metaschema"
+    },
+    
+    "$id": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://raw\\.githubusercontent\\.com/depalmaworkshop/(schemas|engine)/[^/]+/schemas/.*\\.json$",
+      "description": "GitHub raw URL for the schema file - must be under a 'schemas' folder"
+    },
+    
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Kebab-case identifier used in URLs and folder names"
+    },
+    
+    "title": {
+      "type": "string",
+      "description": "Human-readable display name for the schema"
+    },
+    
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the schema's purpose and usage"
+    },
+    
+    "version": {
+      "type": "object",
+      "required": ["schema_version"],
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+          "description": "Semantic version number (MAJOR.MINOR.PATCH)"
+        }
+      },
+      "additionalProperties": false
+    },
+    
+    "license": {
+      "type": "object",
+      "description": "License information (required for public schemas)",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "License identifier (e.g., 'CC BY-SA 4.0', 'MIT', 'Proprietary')"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the full license text"
+        }
+      }
+    },
+    
+    "maintainers": {
+      "type": "array",
+      "description": "Current maintainers responsible for this schema",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Maintainer's name"
+          },
+          "role": {
+            "type": "string",
+            "description": "Maintainer's role (e.g., 'Lead Maintainer', 'Committee Chair')"
+          },
+          "contact": {
+            "type": "object",
+            "description": "Contact information",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    
+    "attribution": {
+      "type": "object",
+      "description": "Attribution and credit information",
+      "properties": {
+        "contributors": {
+          "type": "array",
+          "description": "People who contributed to this schema",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Contributor's name"
+              },
+              "role": {
+                "type": "string",
+                "description": "Contributor's role (e.g., 'Author', 'Domain Expert', 'Reviewer')"
+              },
+              "contribution": {
+                "type": "string",
+                "description": "Description of the contribution"
+              },
+              "affiliation": {
+                "type": "string",
+                "description": "Organization or committee affiliation"
+              },
+              "contact": {
+                "type": "object",
+                "description": "Contact information (optional)",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        
+        "acknowledgments": {
+          "type": "array",
+          "description": "People or organizations to acknowledge",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "contribution": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        
+        "references": {
+          "type": "array",
+          "description": "Standards, specifications, or sources referenced",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Title of the reference"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL to the reference"
+              },
+              "type": {
+                "type": "string",
+                "description": "Type of reference (e.g., 'standard', 'specification', 'paper', 'documentation')"
+              }
+            }
+          }
+        }
+      }
+    },
+    
+  },
+  
+  "additionalProperties": true
+}
