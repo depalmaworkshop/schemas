@@ -41,8 +41,8 @@
     "$id": {
       "type": "string",
       "format": "uri",
-      "pattern": "^https://raw\\.githubusercontent\\.com/depalmaworkshop/(schemas|engine)/[^/]+/schemas/.*\\.json$",
-      "description": "GitHub raw URL for the schema file - must be under a 'schemas' folder"
+      "pattern": "^https://raw\\.githubusercontent\\.com/depalmaworkshop/[^/]+/[^/]+/schemas/.*\\.json$",
+      "description": "GitHub raw URL for the schema file - must be under depalmaworkshop organization with a 'schemas' folder"
     },
     
     "name": {
